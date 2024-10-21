@@ -53,19 +53,38 @@ It introduces mechanisms to handle overshooting and stagnation in the optimizati
 Clone the repository and install the required packages:
 
 ```bash
-git clone https://github.com/yourusername/optimizer-comparison.git
-cd optimizer-comparison
-pip install -r requirements.txt
+git clone https://github.com/izaznov/AdamZ.git
 ```
 
 ### Usage
+
 
 Run the scripts to train models and compare optimizer performance:
 
 ```bash
 python binary_classification.py
 python mnist_classification.py
-python optimizer_comparison.py
+```
+Ensure that the `AdamZ.py` file is located in the same directory as your script.
+
+Add the following import statement at the beginning of your script to make the AdamZ optimizer available:
+
+```python
+from AdamZ import AdamZ
+```
+
+Instantiate the AdamZ optimizer similarly to other standard optimizers, ensuring you configure the hyperparameters to suit your specific task. Note that the performance of AdamZ is highly sensitive to these parameters, and default settings may not be optimal for all applications.
+
+```python
+optimizer = AdamZ(
+    model.parameters(),
+    lr=learning_rate,
+    overshoot_factor=0.5,
+    stagnation_factor=1.2,
+    stagnation_threshold=0.2,
+    patience=100,
+    stagnation_period=10
+)
 ```
 
 ### Results
