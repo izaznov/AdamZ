@@ -18,8 +18,8 @@ Hyperparameters:
 - overshoot_factor (float, optional): Factor by which the learning rate is reduced in case of overshooting (default: 0.5).
 - stagnation_factor (float, optional): Factor by which the learning rate is increased in case of stagnation (default: 1.2).
 - stagnation_threshold (float, optional): Threshold for detecting stagnation based on the standard deviation of the loss (default: 0.2).
-- patience (int, optional): Number of epochs to wait before adjusting the learning rate (default: 100).
-- stagnation_period (int, optional): Number of epochs to consider for stagnation detection (default: 10).
+- patience (int, optional): Number of steps to wait before adjusting the learning rate (default: 100).
+- stagnation_period (int, optional): Number of steps to consider for stagnation detection (default: 10).
 - max_norm (float, optional): Maximum norm for gradient clipping (default: 1.0).
 - min_lr (float, optional): Minimum allowable learning rate (default: 1e-7).
 - max_lr (float, optional): Maximum allowable learning rate (default: 1).
