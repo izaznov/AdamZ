@@ -18,8 +18,9 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
-[project.dependencies]
-torch = ">=2.5.1"
+dependencies = [
+    "torch>=2.5.1"
+]
 
 [project.urls]
 Homepage = "https://github.com/zaznov/AdamZ"
