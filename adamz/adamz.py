@@ -12,7 +12,7 @@ import numpy as np
 #from optimizer import 
 #from torch.optim.optimizer import
 
-from optimizer import (
+from .optimizer import (
     _capturable_doc,
     _default_to_fused_or_foreach,
     _device_dtype_check_for_fused,
