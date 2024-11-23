@@ -3,6 +3,7 @@
 This repository provides the implementation of the newly proposed optimizer, AdamZ. It includes comprehensive benchmarking scripts to evaluate AdamZ's performance against other popular optimizers across two datasets and two neural network architectures, ranging from shallow to deep models. It also contains simple unit tests to ensure the reliability of AdamZ.
 
 # Repository Overview
+```
 adamz_optimizer/
 ├── Whitepaper/
 │   ├── AdamZ.py         # Simplified implementation of the AdamZ optimizer
