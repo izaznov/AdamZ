@@ -1,1 +1,23 @@
+[project]
+name = "adamz"
+version = "0.1.0"
+authors = [
+  { name="Ilia Zaznov", email="izaznov@gmail.com" },
+]
+description = "An enhanced Adam optimizer with overshoot and stagnation handling."
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+keywords = ["optimizer", "deep learning", "adam", "machine learning"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 
+[project.dependencies]
+torch = ">=2.5.1"
+
+[project.urls]
+Homepage = "https://github.com/zaznov/AdamZ"
+Issues = "https://github.com/zaznov/AdamZ/issues"
