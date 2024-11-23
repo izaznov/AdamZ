@@ -1,6 +1,6 @@
 # AdamZ is an enhanced variant of the widely-used Adam optimizer, designed to improve upon its predecessor by offering more efficient convergence and potentially better generalization capabilities across various neural network training tasks.
 
-This repository provides the implementation of the newly proposed optimizer, AdamZ. It includes comprehensive benchmarking scripts to evaluate AdamZ's performance against other popular optimizers across two datasets and two neural network architectures, ranging from shallow to deep models.
+This repository provides the implementation of the newly proposed optimizer, AdamZ. It includes comprehensive benchmarking scripts to evaluate AdamZ's performance against other popular optimizers across two datasets and two neural network architectures, ranging from shallow to deep models. It also contains simple unit tests to ensure the reliability of AdamZ.
 
 # Repository Overview
 adamz_optimizer/
