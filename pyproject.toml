@@ -3,6 +3,9 @@ name = "adamz"
 version = "0.1.0"
 authors = [
   { name="Ilia Zaznov", email="izaznov@gmail.com" },
+  { name = "Atta Badii", email = "atta.badii@reading.ac.uk" },
+  { name = "Julian Kunkel", email = "julian.kunkel@gwdg.de" },
+  { name = "Alfonso Dufour", email = "a.dufour@icmacentre.ac.uk" }
 ]
 description = "An enhanced Adam optimizer with overshoot and stagnation handling."
 readme = "README.md"
