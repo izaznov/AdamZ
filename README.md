@@ -18,6 +18,7 @@ AdamZ/
 │   ├── test_adamz.py    # Unit tests for the AdamZ optimizer
 ├── README.md                # Project documentation
 ├── setup.py                 # Setup script for packaging and installation
+├── pyproject.toml           # Build system configuration
 ├── LICENSE                  # License information
 ```
 
@@ -27,7 +28,7 @@ AdamZ/
 - **`whitepaper/`**: Holds scripts that implement the original research paper experiments, including synthetic and MNIST datasets.
 - **Root files**:
   - `README.md`: Project documentation.
-  - `setup.py`: Setup script for packaging and installation
+  - - **Root files** like `README.md`, `setup.py`, and `pyproject.toml` provide documentation, installation, and build configuration.
   - `LICENSE`: License information for the project.
 
 #### Prerequisites
