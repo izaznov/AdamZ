@@ -13,7 +13,7 @@ AdamZ/
 ├── adamz/
 │   ├── __init__.py          # Package initialization for the AdamZ optimizer 
 │   ├── adamz.py         # Full-scale Torch implementation of AdamZ
-│   ├── optimizer.py         # Torch optimizer methods from Pytorch library
+│   ├── optimizer.py         # Supporting functions for optimizers from Pytorch library
 ├── tests/
 │   ├── test_adamz.py    # Unit tests for the AdamZ optimizer
 ├── README.md                # Project documentation
