@@ -7,9 +7,9 @@ This repository provides the implementation of the newly proposed optimizer, Ada
 AdamZ/
 ├── Whitepaper/
 │   ├── AdamZ.py         # Simplified implementation of the AdamZ optimizer
-│   ├── Circle_adamz_whitepaper.py  # Implementation for synthetic dataset
-│   ├── Mnist_adamz_whitepaper.py   # Implementation for MNIST dataset
-│   ├── README.md   # Implementation for MNIST dataset
+│   ├── Circle_adamz_whitepaper.py  # Benchmarking for synthetic dataset
+│   ├── Mnist_adamz_whitepaper.py   # Benchmarking for MNIST dataset
+│   ├── README.md   # Project documentation
 ├── adamz/
 │   ├── __init__.py          # Package initialization for the AdamZ optimizer 
 │   ├── adamz.py         # Full-scale Torch implementation of AdamZ
@@ -47,8 +47,6 @@ or
 ```bash
 pip install git+https://github.com/izaznov/AdamZ.git
 ```
-
-
 
 ### Usage
 Instantiate the AdamZ optimizer similarly to other standard optimizers, ensuring you configure the hyperparameters to suit your specific task. Note that the performance of AdamZ is highly sensitive to these parameters, and default settings may not be optimal for all applications.
