@@ -3,6 +3,36 @@
 This repository provides the implementation of the newly proposed optimizer, AdamZ. It includes comprehensive benchmarking scripts to evaluate AdamZ's performance against other popular optimizers across two datasets and two neural network architectures, ranging from shallow to deep models.
 
 # Repository Overview
+adamz_optimizer/
+├── Whitepaper/
+│   ├── AdamZ.py         # Simplified implementation of the AdamZ optimizer
+│   ├── Circle_adamz_whitepaper.py  # Implementation for synthetic dataset
+│   ├── Mnist_adamz_whitepaper.py   # Implementation for MNIST dataset
+├── README.md                # Project documentation
+├── adamz/
+│   ├── __init__.py          # Package initialization for the AdamZ optimizer 
+│   ├── adamz.py         # Full-scale Torch implementation of AdamZ
+│   ├── optimizer.py         # Torch optimizer methods from Pytorch library
+├── tests/
+│   ├── test_adamz.py    # Unit tests for the AdamZ optimizer
+├── README.md                # Project documentation
+├── setup.py                 # Setup script for packaging and installation
+├── LICENSE                  # License information
+```
+
+### Description of Folders
+- **`adamz/`**: Contains the core implementation of the AdamZ optimizer.
+- **`tests/`**: Includes unit tests for validating the optimizer's functionality.
+- **`whitepaper/`**: Holds scripts that implement the original research paper experiments, including synthetic and MNIST datasets.
+- **Root files**:
+  - `README.md`: Project documentation.
+  - `setup.py` and `pyproject.toml`: Installation and build configuration.
+  - `LICENSE`: License information for the project.
+
+
+
+
+
 ## Datasets used
 
 1. **Synthetic Dataset**
