@@ -7,11 +7,6 @@ from torch import Tensor
 from collections import deque
 import numpy as np
 
-# !!!! Change back to 
-#from .optimizer import 
-#from optimizer import 
-#from torch.optim.optimizer import
-
 from .optimizer import (
     _capturable_doc,
     _default_to_fused_or_foreach,
