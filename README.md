@@ -4,7 +4,7 @@ This repository provides the implementation of the newly proposed optimizer, Ada
 
 # Repository Overview
 ```
-adamz_optimizer/
+AdamZ/
 ├── Whitepaper/
 │   ├── AdamZ.py         # Simplified implementation of the AdamZ optimizer
 │   ├── Circle_adamz_whitepaper.py  # Implementation for synthetic dataset
@@ -42,27 +42,21 @@ Clone the repository and install the required packages:
 ```bash
 git clone https://github.com/izaznov/AdamZ.git
 ```
+or 
+```bash
+pip install git+https://github.com/izaznov/AdamZ.git
+```
+
+
 
 ### Usage
-
-
-Run the scripts to train models and compare optimizer performance:
-
-```bash
-python Circle_adamz_whitepaper.py
-python Mnist_adamz_whitepaper.py
-```
-Ensure that the `AdamZ.py` file is located in the same directory as your script.
-
-Add the following import statement at the beginning of your script to make the AdamZ optimizer available:
-
-```python
-from AdamZ import AdamZ
-```
-
 Instantiate the AdamZ optimizer similarly to other standard optimizers, ensuring you configure the hyperparameters to suit your specific task. Note that the performance of AdamZ is highly sensitive to these parameters, and default settings may not be optimal for all applications.
 
 ```python
+from adamz import AdamZ
+import torch
+
+model = torch.nn.Linear(10, 1)
 optimizer = AdamZ(
     model.parameters(),
     lr=learning_rate,
@@ -72,11 +66,13 @@ optimizer = AdamZ(
     patience=100,
     stagnation_period=10
 )
+# Training loop
+for input, target in dataset:
+    optimizer.zero_grad()
+    loss = loss_fn(model(input), target)
+    loss.backward()
+    optimizer.step()
 ```
-
-### Results
-
-The scripts generate visualizations and save models for further analysis. Results are saved as images and can be found in the respective directories.
 
 ## Contributions
 
