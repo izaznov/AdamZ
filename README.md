@@ -7,8 +7,8 @@ This repository provides the implementation of the newly proposed optimizer, Ada
 AdamZ/
 ├── Whitepaper/
 │   ├── AdamZ.py         # Simplified implementation of the AdamZ optimizer
-│   ├── Circle_adamz_whitepaper.py  # Benchmarking for synthetic dataset
-│   ├── Mnist_adamz_whitepaper.py   # Benchmarking for MNIST dataset
+│   ├── Circle_adamz_whitepaper.py  # Benchmarking experiments for the synthetic dataset
+│   ├── Mnist_adamz_whitepaper.py   # Benchmarking experiments for the MNIST dataset
 │   ├── README.md   # Project documentation
 ├── adamz/
 │   ├── __init__.py          # Package initialization for the AdamZ optimizer 
