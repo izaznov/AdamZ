@@ -28,7 +28,7 @@ AdamZ/
 - **`whitepaper/`**: Holds scripts that implement the original research paper experiments, including synthetic and MNIST datasets.
 - **Root files**:
   - `README.md`: Project documentation.
-  - - **Root files** like `README.md`, `setup.py`, and `pyproject.toml` provide documentation, installation, and build configuration.
+  - `setup.py`, and `pyproject.toml` provide installation, and build configuration.
   - `LICENSE`: License information for the project.
 
 #### Prerequisites
