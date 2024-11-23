@@ -9,7 +9,7 @@ AdamZ/
 │   ├── AdamZ.py         # Simplified implementation of the AdamZ optimizer
 │   ├── Circle_adamz_whitepaper.py  # Implementation for synthetic dataset
 │   ├── Mnist_adamz_whitepaper.py   # Implementation for MNIST dataset
-├── README.md                # Project documentation
+│   ├── README.md   # Implementation for MNIST dataset
 ├── adamz/
 │   ├── __init__.py          # Package initialization for the AdamZ optimizer 
 │   ├── adamz.py         # Full-scale Torch implementation of AdamZ
