@@ -87,7 +87,6 @@ If you find this code helpful, please cite our paper in the following format:
 }
 ```
 
-
 ## Contributions
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue for suggestions and improvements.
