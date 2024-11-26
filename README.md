@@ -72,6 +72,21 @@ for input, target in dataset:
     loss.backward()
     optimizer.step()
 ```
+## Citation
+If you find this code helpful, please cite our paper in the following format:
+
+```bibtex
+@misc{zaznov2024adamzenhancedoptimisationmethod,
+      title={AdamZ: An Enhanced Optimisation Method for Neural Network Training}, 
+      author={Ilia Zaznov and Atta Badii and Alfonso Dufour and Julian Kunkel},
+      year={2024},
+      eprint={2411.15375},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2411.15375}, 
+}
+```
+
 
 ## Contributions
 
