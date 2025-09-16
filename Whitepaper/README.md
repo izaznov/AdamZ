@@ -46,7 +46,7 @@ It introduces mechanisms to handle overshooting and stagnation in the optimizati
    - **Script**: `Mnist_adamz_whitepaper.py`
    - **Description**: This script implements and trains a deep neural network model leveraging a multi-head attention mechanism for digit classification using the MNIST dataset. It focuses on comparing the performance of various optimization algorithms, including a newly proposed optimizer, AdamZ.
   
-### Benchmarking on CIFAR-10 (NEW)
+4. ### Benchmarking on CIFAR-10
 - **Script:** `Cifar10_adamz_whitepaper.py`
 - **Description:** Implements and trains a CNN for image classification using the CIFAR-10 dataset. Compares AdamZ with Adam, AdamW, SGD, RMSprop, Adagrad, Adamax, ASGD, and NAdam.
 
@@ -118,5 +118,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 For any questions, please contact i.zaznov@pgr.reading.ac.uk or open an issue on GitHub.
+
 
 
