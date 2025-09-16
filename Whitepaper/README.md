@@ -13,8 +13,8 @@ This repository provides the official implementation of AdamZ, along with compre
    - **Purpose**: Provides a more complex and real-world scenario to evaluate the optimizer's effectiveness in image classification tasks.
 
 3. **CIFAR-10 Dataset**
-- **Description:** Contains 60,000 color images across 10 classes, commonly used for benchmarking image classification models.
-- **Purpose:** Evaluates optimizer performance in high-dimensional, multi-class image classification tasks using convolutional neural networks (CNN).
+   - **Description:** Contains 60,000 color images across 10 classes, commonly used for benchmarking image classification models.
+   - **Purpose:** Evaluates optimizer performance in high-dimensional, multi-class image classification tasks using convolutional neural networks (CNN).
 
 ### Neural Networks
 
@@ -26,9 +26,9 @@ This repository provides the official implementation of AdamZ, along with compre
    - **Architecture**: A deeper architecture with multiple layers, including a multi-head attention mechanism for feature extraction.
    - **Use Case**: Applied to the MNIST dataset to evaluate the optimizer's capability in handling complex data and deeper architectures.
   
-3. ### Convolutional Neural Network (CNN)
-- **Architecture:** Convolutional layers, max-pooling, fully connected layers, and dropout regularization.
-- **Use Case:** Used for the CIFAR-10 dataset to compare optimizers on challenging image classification tasks.
+3. **Convolutional Neural Network (CNN)**
+   - **Architecture:** Convolutional layers, max-pooling, fully connected layers, and dropout regularization.
+   - **Use Case:** Used for the CIFAR-10 dataset to compare optimizers on challenging image classification tasks.
   
 ### Scripts
 
@@ -46,9 +46,9 @@ It introduces mechanisms to handle overshooting and stagnation in the optimizati
    - **Script**: `Mnist_adamz_whitepaper.py`
    - **Description**: This script implements and trains a deep neural network model leveraging a multi-head attention mechanism for digit classification using the MNIST dataset. It focuses on comparing the performance of various optimization algorithms, including a newly proposed optimizer, AdamZ.
   
-4. ### Benchmarking on CIFAR-10
-- **Script:** `Cifar10_adamz_whitepaper.py`
-- **Description:** Implements and trains a CNN for image classification using the CIFAR-10 dataset. Compares AdamZ with Adam, AdamW, SGD, RMSprop, Adagrad, Adamax, ASGD, and NAdam.
+4. **Benchmarking on CIFAR-10**
+   - **Script:** `Cifar10_adamz_whitepaper.py`
+   - **Description:** Implements and trains a CNN for image classification using the CIFAR-10 dataset. Compares AdamZ with Adam, AdamW, SGD, RMSprop, Adagrad, Adamax, ASGD, and NAdam.
 
 #### Prerequisites
 
@@ -118,6 +118,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 For any questions, please contact i.zaznov@pgr.reading.ac.uk or open an issue on GitHub.
+
 
 
 
