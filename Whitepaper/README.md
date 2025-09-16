@@ -1,6 +1,6 @@
 # AdamZ is an enhanced variant of the widely-used Adam optimizer, designed to improve upon its predecessor by offering more efficient convergence and potentially better generalization capabilities across various neural network training tasks.
 
-This repository provides the implementation of the newly proposed optimizer, AdamZ. It includes comprehensive benchmarking scripts to evaluate AdamZ's performance against other popular optimizers across two datasets and two neural network architectures, ranging from shallow to deep models.
+This repository provides the official implementation of AdamZ, along with comprehensive benchmarking scripts to evaluate its performance against other popular optimizers across three datasets (synthetic, MNIST, CIFAR-10) and three neural network architectures (shallow, deep, and CNN).
 
 ## Datasets used
 
@@ -12,6 +12,10 @@ This repository provides the implementation of the newly proposed optimizer, Ada
    - **Description**: A widely-used dataset for handwritten digit recognition containing 60,000 training images and 10,000 test images.
    - **Purpose**: Provides a more complex and real-world scenario to evaluate the optimizer's effectiveness in image classification tasks.
 
+3. **CIFAR-10 Dataset**
+- **Description:** Contains 60,000 color images across 10 classes, commonly used for benchmarking image classification models.
+- **Purpose:** Evaluates optimizer performance in high-dimensional, multi-class image classification tasks using convolutional neural networks (CNN).
+
 ### Neural Networks
 
 1. **Shallow Neural Network**
@@ -21,6 +25,11 @@ This repository provides the implementation of the newly proposed optimizer, Ada
 2. **Deep Neural Network**
    - **Architecture**: A deeper architecture with multiple layers, including a multi-head attention mechanism for feature extraction.
    - **Use Case**: Applied to the MNIST dataset to evaluate the optimizer's capability in handling complex data and deeper architectures.
+  
+3. ### Convolutional Neural Network (CNN)
+- **Architecture:** Convolutional layers, max-pooling, fully connected layers, and dropout regularization.
+- **Use Case:** Used for the CIFAR-10 dataset to compare optimizers on challenging image classification tasks.
+  
 ### Scripts
 
 1. **AdamZ optimizer implementation**
@@ -36,6 +45,10 @@ It introduces mechanisms to handle overshooting and stagnation in the optimizati
 3. **Benchmarking of AdamZ against other popular optimizers for the MNIST digit classification task**
    - **Script**: `Mnist_adamz_whitepaper.py`
    - **Description**: This script implements and trains a deep neural network model leveraging a multi-head attention mechanism for digit classification using the MNIST dataset. It focuses on comparing the performance of various optimization algorithms, including a newly proposed optimizer, AdamZ.
+  
+### Benchmarking on CIFAR-10 (NEW)
+- **Script:** `Cifar10_adamz_whitepaper.py`
+- **Description:** Implements and trains a CNN for image classification using the CIFAR-10 dataset. Compares AdamZ with Adam, AdamW, SGD, RMSprop, Adagrad, Adamax, ASGD, and NAdam.
 
 #### Prerequisites
 
@@ -46,6 +59,9 @@ It introduces mechanisms to handle overshooting and stagnation in the optimizati
 - matplotlib
 - seaborn
 - pandas
+- scipy
+- brokenaxes
+- pickle
 
 #### Installation
 
@@ -63,6 +79,7 @@ Run the scripts to train models and compare optimizer performance:
 ```bash
 python Circle_adamz_whitepaper.py
 python Mnist_adamz_whitepaper.py
+python Cifar10_adamz_whitepaper.py
 ```
 Ensure that the `AdamZ.py` file is located in the same directory as your script.
 
@@ -101,4 +118,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 For any questions, please contact i.zaznov@pgr.reading.ac.uk or open an issue on GitHub.
+
 
